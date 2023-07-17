@@ -223,10 +223,10 @@ function flyToStore(currentFeature) {
 }
 
 // get firebase database reference...
-var cars_Ref = firebase.database().ref('/LAMPARAS_E4_MAT');
+var cars_Ref = firebase.database().ref('/LAMPARAS_E5_MAT');
 
 
-var dataConductores = firebase.database().ref('/LAMPARAS_E4_MAT');
+var dataConductores = firebase.database().ref('/LAMPARAS_E5_MAT');
 dataConductores.on('value', function (snapshot) {
     //updateStarCount(postElement, snapshot.val());
 
@@ -328,7 +328,7 @@ function AddPedido(data) {
 
 
 
-var pedidos_Ref = firebase.database().ref('/RPUMEDIDOR_E4_MAT');
+var pedidos_Ref = firebase.database().ref('/RPUMEDIDOR_E5_MAT');
 
 // this event will be triggered when a new object will be added in the database...
 pedidos_Ref.on('child_added', function (data) {
